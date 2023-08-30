@@ -3,6 +3,12 @@ section {
     height: 100vh;
 }
 
+/*-----S1-----*/
+#section1{
+    display: flex;
+    align-items: flex-end;
+}
+
 img#backgroundImg {
     position: absolute;
     display: flex;
@@ -12,4 +18,8 @@ img#backgroundImg {
     height: 100vh;
     top: 0;
     left: 0;
+}
+
+#about {
+    font-family: 'Avenir Next';
 }
