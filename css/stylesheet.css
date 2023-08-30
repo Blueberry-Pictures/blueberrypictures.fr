@@ -15,7 +15,8 @@ h1 {
     font-family: eloquent-jf-pro, serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 30px;
+    font-size: 55px;
+    text-transform: uppercase;
     color: var(--Azureish-White);
 }
 
@@ -31,7 +32,7 @@ h3 {
     font-family: six-hands-brush, sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 80px;
     color: white;
 }
 
@@ -55,6 +56,9 @@ body {
 
 /*-----HEADER-----*/
 header {
+    top: 0;
+    left: 0;
+    right: 0;
     position: absolute;
     display: flex;
     justify-content: space-between;

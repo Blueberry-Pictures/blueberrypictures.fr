@@ -4,7 +4,7 @@ section {
 }
 
 /*-----S1-----*/
-#section1{
+#section1 {
     display: flex;
     align-items: flex-end;
 }
@@ -20,6 +20,43 @@ img#backgroundImg {
     left: 0;
 }
 
+#titleWrap {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+#titleWrap>h1 {
+    margin: 0;
+    padding-left: 100px;
+}
+
+#titleWrap>h3 {
+    margin: 0;
+    padding-right: 200px;
+    align-self: flex-end;
+}
+
+#arrowImg {
+    align-self: center;
+    width: 30px;
+    padding-bottom: 20px;
+}
+
+#aboutWrap {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+}
+
 #about {
     font-family: 'Avenir Next';
+    text-transform: uppercase;
 }
+
+#aboutImg {
+    padding-left: 10px;
+    width: 23px;
+}
+
+/*-----S2-----*/
