@@ -130,3 +130,43 @@ div#s2right {
     height: 100vh;
     left: 0;
 }
+
+/*-----S3-----*/
+section#section3 {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#section3>div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+div#s3left {
+    width: 30vw;
+    padding: 45px;
+}
+
+#s3left>h3 {
+    margin-bottom: 45vh;
+}
+
+div#s3right {
+    display: flex;
+    width: 30vw;
+    padding: 45px;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+#s3right>a {
+    text-transform: uppercase;
+}
+
+#section3>.arrowImg {
+    position: absolute;
+    align-self: center;
+    width: 30px;
+    padding-bottom: 20px;
+}
