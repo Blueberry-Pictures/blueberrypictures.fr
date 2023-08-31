@@ -21,19 +21,28 @@ h1 {
 }
 
 h2 {
-    font-family: zuume, sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    color: var(--Light-Cobalt-Blue);
-}
-
-h3 {
     font-family: six-hands-brush, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 80px;
     color: white;
+}
+
+h3 {
+    font-family: eloquent-jf-pro, serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 55px;
+    text-transform: uppercase;
+    color: var(--Azureish-White);
+}
+
+h4 {
+    font-family: zuume, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    color: var(--Light-Cobalt-Blue);
 }
 
 a {
@@ -59,7 +68,7 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    position: absolute;
+    position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;

@@ -3,6 +3,12 @@ section {
     height: 100vh;
 }
 
+.arrowImg {
+    align-self: center;
+    width: 30px;
+    padding-bottom: 20px;
+}
+
 /*-----S1-----*/
 #section1 {
     display: flex;
@@ -31,16 +37,10 @@ img#backgroundImg {
     padding-left: 100px;
 }
 
-#titleWrap>h3 {
+#titleWrap>h2 {
     margin: 0;
     padding-right: 200px;
     align-self: flex-end;
-}
-
-#arrowImg {
-    align-self: center;
-    width: 30px;
-    padding-bottom: 20px;
 }
 
 #aboutWrap {
@@ -60,3 +60,11 @@ img#backgroundImg {
 }
 
 /*-----S2-----*/
+section#section2 {
+    display: flex;
+    flex-direction: column;
+}
+
+div#s2textWrap {
+    display: flex;
+}
