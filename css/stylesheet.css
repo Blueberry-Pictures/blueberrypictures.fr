@@ -32,16 +32,15 @@ h3 {
     font-family: eloquent-jf-pro, serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 55px;
-    text-transform: uppercase;
-    color: var(--Azureish-White);
+    font-size: 26px;
+    color: white;
 }
 
 h4 {
     font-family: zuume, sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 26px;
+    font-size: 24px;
     color: var(--Light-Cobalt-Blue);
 }
 
