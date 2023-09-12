@@ -12,12 +12,17 @@ function showMenuItems() {
     menuItems.forEach((item, index) => {
         setTimeout(() => {
             item.classList.add('menuShow');
-        }, index * 300); //Délai
+        }, index * 50); //Délai
     });
 }
 
 function hideMenuItems() {
-    menuItems.forEach((item) => {
-        item.classList.remove('menuShow');
+    const menuItems = document.querySelectorAll('.menuHide');
+    const totalItems = menuItems.length;
+
+    menuItems.forEach((item, index) => {
+        setTimeout(() => {
+            item.classList.remove('menuShow');
+        }, (totalItems - index - 1) * 50); //Délai
     });
 }
