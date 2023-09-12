@@ -15,7 +15,7 @@ section {
     align-items: flex-end;
 }
 
-img#s1backgroundImg {
+video#s1backgroundVideo {
     position: absolute;
     display: flex;
     z-index: -1;
