@@ -1,8 +1,9 @@
 /*-----COLORS-----*/
 :root {
-    --Azureish-White: #D0E0F4;
     --Light-Cobalt-Blue: #8AB6E3;
     --Chineese-Silver: #CDCCCC;
+    --Outer-Space: #404C54;
+    --Raisin-Black: #1E1F26;
 }
 
 /*-----SCROLLBAR-----*/
@@ -17,7 +18,7 @@ h1 {
     font-weight: 400;
     font-size: 55px;
     text-transform: uppercase;
-    color: var(--Azureish-White);
+    color: white;
 }
 
 h2 {
@@ -74,11 +75,36 @@ header {
     padding: 25px 50px;
 }
 
+#logoHeader {
+    width: 100px;
+}
+
+header>div {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 50px;
+    top: 50px;
+    width: 100px;
+}
+
 header>div>a {
+    cursor: pointer;
     text-transform: capitalize;
     transition: ease-in-out 0.25s;
 }
 
-#logoHeader {
-    width: 100px;
+header>div>hr {
+    margin: 0px;
+    width: 25%;
+    border: none;
+    border-bottom: solid 1px white;
+}
+
+.menuHide {
+    display: none;
+}
+
+.menuShow {
+    display: block;
 }

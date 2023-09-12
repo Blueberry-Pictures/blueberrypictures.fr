@@ -21,14 +21,14 @@
 <body>
     <header>
         <a><img id="logoHeader" src="assets/img/Logo_Monochrome.svg" alt="Logo"></a>
-        <div>
+        <div id="menuWrap">
             <a id="home">Home</a>
-            <hr>
-            <a id="gallery">Gallery</a>
-            <hr>
-            <a id="blog">Blog</a>
-            <hr>
-            <a id="contact">Contact</a>
+            <hr class="menuHide">
+            <a class="menuHide">Gallery</a>
+            <hr class="menuHide">
+            <a class="menuHide">Blog</a>
+            <hr class="menuHide">
+            <a class="menuHide">Contact</a>
         </div>
     </header>
     <main>
@@ -42,7 +42,9 @@
                 <a id="about">About this image</a>
                 <img alt="about" id="aboutImg" src="./assets/img/About.svg">
             </div>
-            <img alt="background" id="s1backgroundImg" src="./assets/img/background.png">
+            <video id="s1backgroundVideo" autoplay loop muted>
+                <source src="./assets/videos/mainBackground.mp4" type="video/mp4">                
+            </video>
         </section>
         <section id="section2">
             <div id="s2textWrap">
@@ -95,7 +97,7 @@
                 </div>
             </div>
             <img alt="arrow" class="arrowImg" src="./assets/img/Arrow.svg">
-            <img alt="background" id="s3backgroundImg" src="./assets/img/background.png">
+            <img alt="background" id="s3backgroundImg" src="./assets/img/background.webp">
         </section>
         <section id="section4">
             <h3>Ready to work with us ?</h3>
@@ -113,6 +115,28 @@
             <img alt="background" id="s4backgroundImg" src="./assets/img/BG Sec3.svg">
         </section>
     </main>
+    
+    <script>
+        const menuWrap = document.getElementById('menuWrap');
+        const menuItems = document.querySelectorAll('.menuHide');
+    
+        function showMenuItems() {
+            menuItems.forEach((item, index) => {
+                setTimeout(() => {
+                    item.classList.add('menuShow');
+                }, index * 300); // Ajoutez un délai entre chaque élément
+            });
+        }
+    
+        function hideMenuItems() {
+            menuItems.forEach((item) => {
+                item.classList.remove('menuShow');
+            });
+        }
+    
+        menuWrap.addEventListener('mouseover', showMenuItems);
+        menuWrap.addEventListener('mouseout', hideMenuItems);
+    </script>
 </body>
 
 </html>
