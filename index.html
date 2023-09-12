@@ -9,16 +9,17 @@
     <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="assets/img/favicon/site.webmanifest">
     <!--FONTS-->
     <link rel="stylesheet" href="./css/fonts.css">
     <link rel="stylesheet" href="https://use.typekit.net/ymt0far.css">
     <!--CSS-->
     <link rel="stylesheet" href="./css/stylesheet.css">
     <link rel="stylesheet" href="./css/index.css">
+    <!--JS-->
+    <script type="text/javascript" src="./js/menu.js"></script>
+    <script type="text/javascript" src="./js/loader.js"></script>
 </head>
-
-<body>
+<body onload="onLoad();">
     <header>
         <a><img id="logoHeader" src="assets/img/Logo_Monochrome.svg" alt="Logo"></a>
         <div id="menuWrap">
@@ -116,27 +117,6 @@
         </section>
     </main>
     
-    <script>
-        const menuWrap = document.getElementById('menuWrap');
-        const menuItems = document.querySelectorAll('.menuHide');
-    
-        function showMenuItems() {
-            menuItems.forEach((item, index) => {
-                setTimeout(() => {
-                    item.classList.add('menuShow');
-                }, index * 300); // Ajoutez un délai entre chaque élément
-            });
-        }
-    
-        function hideMenuItems() {
-            menuItems.forEach((item) => {
-                item.classList.remove('menuShow');
-            });
-        }
-    
-        menuWrap.addEventListener('mouseover', showMenuItems);
-        menuWrap.addEventListener('mouseout', hideMenuItems);
-    </script>
 </body>
 
 </html>
